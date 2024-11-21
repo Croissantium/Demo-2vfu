@@ -64,6 +64,52 @@
                     <div class="user-form__elements-buttons-login">
                         <a href="#" class="button--primary-id" onclick="validateForm()">Вход</a>
                         <a href="https://croissantium.github.io/Demo-2vfu/id-form-answer.html" class="button--secondary-id">Регистрация</a>
+                        <div>
+  <script src="https://unpkg.com/@vkid/sdk@<3.0.0/dist-sdk/umd/index.js"></script>
+  <script type="text/javascript">
+    if ('VKIDSDK' in window) {
+      const VKID = window.VKIDSDK;
+
+      VKID.Config.init({
+        app: 52742205,
+        redirectUrl: 'https://croissantium.github.io/Demo-2vfu/index.html',
+        responseMode: VKID.ConfigResponseMode.Callback,
+        source: VKID.ConfigSource.LOWCODE,
+      });
+
+      const oneTap = new VKID.OneTap();
+
+      oneTap.render({
+        container: document.currentScript.parentElement,
+        fastAuthEnabled: false,
+        showAlternativeLogin: true,
+        styles: {
+          borderRadius: 12
+        },
+        oauthList: [
+          'mail_ru'
+        ]
+      })
+      .on(VKID.WidgetEvents.ERROR, vkidOnError)
+      .on(VKID.OneTapInternalEvents.LOGIN_SUCCESS, function (payload) {
+        const code = payload.code;
+        const deviceId = payload.device_id;
+
+        VKID.Auth.exchangeCode(code, deviceId)
+          .then(vkidOnSuccess)
+          .catch(vkidOnError);
+      });
+    
+      function vkidOnSuccess(data) {
+        // Обработка полученного результата
+      }
+    
+      function vkidOnError(error) {
+        // Обработка ошибки
+      }
+    }
+  </script>
+</div>
                     </div>
                 </div>                  
             </div>
