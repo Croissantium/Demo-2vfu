@@ -1,0 +1,133 @@
+.mts-link-step {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 24px;
+}
+
+.mts-link-step-elements {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 260px;
+    gap: 24px;
+}
+
+.mts-link-step-elements-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 100%;
+    border-radius: 24px;
+    background-color: var(--gray-100);
+    padding: 28px;
+}
+
+.mts-link-step-elements-item-blue {
+    background-color: var(--blue-100);
+    height: 260px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mts-link-step-elements-item-blue > .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 32px;
+}
+
+.title-container > .title {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.mts-link-step-elements-item > .title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.mts-link-step-elements-select {
+    display: flex;
+    height: 360px;
+    background-color: var(--gray-100);
+    padding: 32px;
+    border-radius: 24px;
+
+    column-gap: 32px;
+}
+
+.mts-link-step-elements-select > .mts-link-step-elements-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 24px;
+    
+    width: 20%;
+    border-radius: 0px;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.select-container {
+    display: flex;
+    column-gap: 24px;
+}
+
+.select-container > .select-one,
+.select-container > .select-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 100%;
+    padding: 28px;
+}
+
+.select-one > .header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.select-one,
+.select-two {
+    border: 2px solid var(--blue-300);
+    border-radius: 12px;
+}
+
+.select-one > .header > .title,
+.select-two > .header > .title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.select-one > .header > .subtitle,
+.select-one > .footer,
+.select-two > .header > .subtitle,
+.select-two > .footer {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.number-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+    padding: 6px 12px;
+    background-color: var(--blue-200);
+    border-radius: 12px;
+
+
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--black);
+}
+

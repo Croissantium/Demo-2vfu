@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация студентов</title>
+    <link rel="icon" href="/images and icons/32.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images and icons/180.ico">
+
+    <link rel="stylesheet" type="text/css" href="/css/body.css" />
+    <link rel="stylesheet" type="text/css" href="/css/design-tokens.css" />
+    <link rel="stylesheet" type="text/css" href="/css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="/css/all-icons.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/id_forms.css" />
+</head>
+<body>
+    <div class="user-form-container">
+        <div class="user-form">
+            <div class="user-form__elements">
+                <div class="user-form__elements-title">
+                    <div class="user-form__elements-tilte__logo">
+                        <a href="/index.html">
+                            <img src="/images and icons/logo.svg" alt="logo" />
+                        </a>
+                        <h1>Регистрация для студентов</h1>
+                    </div>
+                    <div class="warning-card-container">
+                        <div class="warning-card">
+                            <div class="icon-warning user-form-warning-color"></div>
+                            <div class="warning-card-text">
+                                <p class="subtitle">Если появиться ошибка <em>«Неверные паспортные данные»</em>, то введите данные прежнего паспорта.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-form__elements-input">
+                    <div class="input-field-all-container-title">
+                        <div class="input-field">
+                            <label class="input-info">ФИО</label>
+                            <input type="text" id="fio" name="name" placeholder="Введите ФИО" required spellcheck="false">
+                            <span class="error-message" id="fioError">&nbsp;</span>
+                        </div>
+                        <div class="input-field">
+                            <label class="input-info">Дата рождения</label>
+                            <input type="tel" id="dob" name="date" class="input-date" placeholder="00.00.0000" spellcheck="false" required>
+                            <span class="error-message" id="dobError">&nbsp;</span>
+                        </div>
+                        <div class="input-field">
+                            <label class="input-info">Паспортные данные</label>
+                            <input type="tel" id="passport" name="passport" class="passport-input" placeholder="00 00 000000" spellcheck="false">
+                            <span class="error-message" id="passportError">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="user-form__elements-buttons">
+                        <button type="button" id="checkDataButton" class="button--primary-id">Проверить данные</button>
+                        <p>Уже есть аккаунт? <a class="link-text" href="/id-form-login.html">Войдите</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-form__bottom">
+            <div class="bottom-container">
+                <a href="#" class="inner-info link">Инструкция</a>
+                <div class="line-h"></div>
+                <p class="inner-info">по вопросам работы сайта: <a class="link-text" href="#">web@s-vfu.ru</a></p>
+            </div>
+            <div id="language-select" class="custom-language-select">
+                <select id="language-select" class="custom-select">
+                    <option value="ru" selected>Русский</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="ch">中國人</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+    
+    <script src="/js-files/validation-person-form.js"></script>
+    <script src="js-files/input-enter.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="icon" href="/images and icons/32.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images and icons/180.ico">
+
+    <link rel="stylesheet" type="text/css" href="/css/body.css" />
+    <link rel="stylesheet" type="text/css" href="/css/design-tokens.css" />
+    <link rel="stylesheet" type="text/css" href="/css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="/css/all-icons.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/id_forms.css" />
+</head>
+<body>
+    <div class="user-form-container">
+        <div class="user-form">
+            <div class="user-form__elements">
+                <div class="user-form__elements-title">
+                    <div class="user-form__elements-tilte__logo">
+                        <a href="/index.html">
+                            <img src="/images and icons/logo.svg" alt="logo" />
+                        </a>
+                        <h1>Вход</h1>
+                    </div>
+                    <div class="warning-card-container">
+                    </div>
+                </div>
+                <div class="user-form__elements-input">
+                    <div class="input-field-all-container">
+                        <div class="input-field-all-container-title">
+                            <div class="input-field">
+                                <label class="input-info">Логин</label>
+                                <div class="container-all-input-mail-address">
+                                    <div class="all-input-mail-address">
+                                        <input type="text" id="email" name="email" placeholder="Введите логин" required />
+                                        <div class="mail-address"><p>@empl.s-vfu.ru</p></div>
+                                    </div>
+                                </div>
+                                <span class="error-message" id="emailError">&nbsp;</span>
+                            </div>
+                            <div class="input-field">
+                                <div class="label-password">
+                                    <label class="input-info">Пароль</label>
+                                    <a href="/password-loss.html" class="button--tertiary-id">Забыли пароль?</a>
+                                </div>
+                                <input type="password" id="password" name="password" spellcheck="false" placeholder="Введите пароль" required minlength="8">
+                                <button type="button" id="togglePassword" class="input-password-visible">
+                                    <img id="toggleIcon" class="icon-eye" alt="Показать пароль">
+                                </button>
+                                <span class="error-message" id="passwordError">&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="checkbox">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <span class="checkmark"></span>
+                            Запомнить меня
+                        </label>
+                    </form>
+                    <div class="user-form__elements-buttons-login">
+                        <a href="#" class="button--primary-id" onclick="validateForm()">Вход</a>
+                        <a href="/id-form-answer.html" class="button--secondary-id">Регистрация</a>
+                    </div>
+                </div>                  
+            </div>
+        </div>
+        <div class="user-form__bottom">
+            <div class="bottom-container">
+                <a href="#" class="inner-info link">Инструкция</a>
+                <div class="line-h"></div>
+                <p class="inner-info">по вопросам работы сайта: <a class="link-text" href="#">web@s-vfu.ru</a></p>
+            </div>
+            <div id="language-select" class="custom-language-select">
+                <select id="language-select" class="custom-select">
+                    <option value="ru" selected>Русский</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="ch">中國人</option>
+                </select>
+                <div class="icon-arrow__down"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js-files/id-form-validation.js"></script>
+    <script src="/js-files/input-enter.js"></script>
+</body>d
+</html>

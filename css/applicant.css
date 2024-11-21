@@ -1,0 +1,194 @@
+/* -- Блоки -- */
+
+.applicant-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.applicant_container__contact-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.applicant_container__contact-info > .phone-number {
+    display: flex;
+    align-items: center;
+
+    column-gap: 8px;
+}
+
+.applicant_container__contact-info > .university-address {
+    display: flex;
+    align-items: center;
+
+    column-gap: 8px;
+}
+
+.university-address > a, 
+.phone-number > a {
+    color: var(--blue-800);
+    font-size: 1.25em;
+    font-weight: 500;
+    text-decoration: none;
+    
+    transition: color 0.2s ease;
+}
+
+.university-address > a:hover, 
+.phone-number > a:hover {
+    color: var(--link-blue);
+}
+
+.button-block {
+    display: flex;
+    justify-content: start;
+}
+
+
+
+
+/* -- Слайдер -- */
+
+.card-slider__applicant-blocks {
+    display: flex;
+    column-gap: 24px;
+}
+
+.card-slider__applicant-blocks-item {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100% !important;
+    height: 400px;
+    background-color: var(--gray-100);
+    border-radius: 28px;
+    padding: 40px;
+}
+
+.card-slider__applicant-blocks-item__number {
+    font-size: 7em;
+    font-weight: 600;
+    color: var(--blue-800);
+}
+
+.card-slider__applicant-blocks-item__title {
+    width: 100%;
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+/* -- Общежитие -- */
+
+.dormitory-blocks {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+
+.dormitory-blocks__img {
+    width: 800px !important;
+    border-radius: 28px;
+}  
+
+
+
+
+/* -- Студ жизнь -- */
+
+.student-life-blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-life-blocks__img {
+    width: 800px !important;
+    border-radius: 28px;
+    margin-right: 28px;
+}
+
+
+/* Прозрачность фото (не в фокусе) на слайдере */
+.dormitory-blocks .slick-slide,
+.student-life-blocks .slick-slide {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.dormitory-blocks .slick-current,
+.student-life-blocks .slick-current {
+    opacity: 1;
+}
+
+
+
+/* -- Наши филиалы -- */
+
+.university-department__blocks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.university-department__blocks-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.university-department__blocks-item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 520px;
+    background-color: var(--gray-100);
+    border-radius: 32px;
+    padding: 48px;
+}
+
+.university-department__blocks-item__img {
+    width: 840px;
+    height: 520px;
+    border-radius: 32px;
+}
+
+.university-department__blocks-item__info-title {
+    width: 100%;
+    font-size: 2.25em;
+    font-weight: 600;
+}
+
+.university-department__blocks-item__info-contact-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.university-department__blocks-item__info-contact-info-item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.university-department__blocks-item__info-contact-info-item > a {
+    text-decoration: none;
+    color: var(--gray-800);
+}
+
+.university-department-mail,
+.university-department-phone-number,
+.university-department-address  {
+    width: max-content;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.university-department-mail:hover,
+.university-department-phone-number:hover,
+.university-department-address:hover  {
+color: var(--link-blue);
+}

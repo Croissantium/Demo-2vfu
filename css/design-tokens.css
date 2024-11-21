@@ -1,0 +1,100 @@
+:root {
+    /* -- Цвета -- */
+
+    /* ------ Основыне ------ */
+
+    --white: #FFFFFF; 
+    --black: #202124;
+
+    /* -- Серый -- */
+    --gray-100: #F8F9FA;
+    --gray-150: #ECECEC;
+    --gray-200: #CED0D2;
+    --gray-300: #A4A7AB;
+    --gray-400: #7A7F83;
+    --gray-500: #656A6F;
+    --gray-600: #50565C;
+    --gray-700: #3B4148;
+    --gray-800: #262D34;
+    
+    --line-gray-header: #F1EFEF;
+    --line-footer: #738291;
+    
+    /* -- Синий -- */
+    --blue-100: #EBF2FB;
+    --blue-150: #E7ECF1;
+    --blue-200: #D5DFEA;    
+    --blue-300: #C0CBDA;
+    --blue-400: #AAB8C9;
+    --blue-500: #94A4B9;
+    --blue-600: #697E97;
+    --blue-700: #3D5776;
+    --blue-800: #123055;
+
+    --link-blue: #126DF7;
+
+
+    /* Иные цвета блоков */
+
+    --stud-yellow: #FEF4D0;
+    --stud-purple: #ECE6FF;
+    --grad-orange: #FFEBD3;
+
+    /* ------ Новостные категории ------ */
+
+    /* Orange */
+    --news-category-orange-background: #ffe0d2;
+    --news-category-orange-text: #ff5e13;
+
+    /* Red */
+    --news-category-red-background: #ffd3d8;
+    --news-category-red-text: #C51A2D;
+
+    /* Yellow */
+    --news-category-yellow-background: #ffefdb;
+    --news-category-yellow-text: #FC9D25;
+
+    /* Blue */
+    --news-category-blue-background: #cae9ff;
+    --news-category-blue-text: #19486A;
+
+    /* Green */    
+    --news-category-green-background: #d4ffca;
+    --news-category-green-text: #4D9F39;
+
+
+
+    /* Ховер */
+    --hover-transition: background-color 0.2s ease;
+
+    --blue-hover: #29578F;
+    --blue-secondary-hover: #d2e6ff;
+    --blue-tertiary-hover: #f5faff;
+
+    /* Другие */
+    --coffee-dark: #664921;
+    --coffee-light: #FFF2E0;
+
+    --warning-red-color: #ff0000;
+
+    --warning-card-background: #FFF0CD;
+    --warning-card: #FFB300;
+
+    
+
+    /* -- Выпускнику -- */
+    --graduate-item-background: #FFEBD3; 
+    --graduate-item-primary: #FFA439;
+
+
+
+
+
+    --purple-box: #D1DAF4;
+
+
+    --hover-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    
+    --hover-scale-transition: scale 0.5s ease;
+    --hover-scale: 1.02;
+}

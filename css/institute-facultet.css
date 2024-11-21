@@ -1,0 +1,39 @@
+.card-slider__institute-facultet {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-slider__institute-facultet-blocks {
+    display: flex;
+    align-items: center;
+}
+
+.card-slider__institute-facultet-blocks-none-4 {
+    display: flex;
+    width: 100%;
+}
+
+.card-slider__institute-facultet-blocks-item {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+    background-color: var(--gray-100);
+    border-radius: 32px;
+    padding: 36px;
+}
+
+.card-slider__placeholder {
+    width: 342px !important;
+    height: 420px;
+    background-color: transparent;
+}
+
+.card-slider__institute-facultet-blocks-item__circle {
+    width: 200px;
+    height: 200px;
+    background-color: var(--blue-800);
+    border-radius: 50%;
+}
