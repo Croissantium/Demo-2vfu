@@ -8,28 +8,28 @@
     font-family: 'Inter-Tight';
     font-weight: 400;
     font-style: normal;
-    src: url('/fonts/InterTight-Regular.woff2') format('woff2');
+    src: url('https://croissantium.github.io/Demo-2vfu/fonts/InterTight-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Inter-Tight';
     font-weight: 500;
     font-style: normal;
-    src: url('/fonts/InterTight-Medium.woff2') format('woff2');
+    src: url('https://croissantium.github.io/Demo-2vfu/fonts/InterTight-Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Inter-Tight';
     font-weight: 600;
     font-style: normal;
-    src: url('/fonts/InterTight-SemiBold.woff2') format('woff2');
+    src: url('https://croissantium.github.io/Demo-2vfu/fonts/InterTight-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Inter-Tight';
     font-weight: 700;
     font-style: normal;
-    src: url('/fonts/InterTight-Bold.woff2') format('woff2');
+    src: url('https://croissantium.github.io/Demo-2vfu/fonts/InterTight-Bold.woff2') format('woff2');
 }
 
 body {
