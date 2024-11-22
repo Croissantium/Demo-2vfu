@@ -35,6 +35,15 @@ body {
     width: 80%;
 }
 
+.user-form__elements-input > .container-or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    color: var(--gray-300);
+}
+
 .user-form__elements-title {
     display: flex;
     flex-direction: column;
