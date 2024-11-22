@@ -71,6 +71,8 @@
     font-size: 1.25em;
     font-weight: 500;
 
+    text-decoration: none;
+
     transition: color 0.2s ease;
 }
 
