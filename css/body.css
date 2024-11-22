@@ -129,6 +129,12 @@ button {
     margin-bottom: 52px;
 }
 
+.all-blocks-title > .title {
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--gray-800);
+}
+
 .all-blocks-title-subtitle {
     display: flex;
     flex-direction: column;

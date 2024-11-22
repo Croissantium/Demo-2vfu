@@ -681,6 +681,12 @@
     background-color: var(--warning-card);
 }
 
+.warning-color-blue {
+    width: 1.25em;
+    height: 1.25em;
+    background-color: var(--blue-700);
+}
+
 .user-form__icon {
     width: 1.5em;
     height: 1.5em;

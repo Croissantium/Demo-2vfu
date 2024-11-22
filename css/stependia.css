@@ -1,0 +1,165 @@
+.page-footer-title {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 24px;
+}
+
+.page-footer-title > p {
+    color: var(--gray-800);
+    font-weight: 600;
+    font-size: 2.75em;
+}
+
+.breadcrums > a,
+.breadcrums > p {
+    color: var(--gray-400);
+}
+
+.card-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 52px;
+}
+
+.card-category-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    column-gap: 24px;
+}
+
+.card-category-item-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 300px;
+    background-color: var(--gray-100);
+    border-radius: 24px;
+
+    padding: 52px;
+}
+
+.card-category-item-block > .title  {
+    color: var(--gray-800);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.card-category-item-block > .list-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.card-category-item-block > .list-item > .list  {
+    color: var(--gray-800);
+    font-size: 1.25em;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.card-category-item-block > .list-item > .list:hover  {
+    color: var(--link-blue);
+}
+
+.info-block-container {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 24px;
+}
+
+.info-block-item-container { 
+    display: flex;
+    flex-direction: column;
+    padding: 52px;
+
+    background-color: var(--gray-100);
+    border-radius: 24px;
+}
+
+.info-block-item-container > .title {
+    color: var(--gray-800);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 52px;
+}
+
+.columm-info {
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--gray-400);
+    font-size: 1em;
+    font-weight: 400;
+
+    margin-bottom: 24px;
+}
+
+.columm-info-next {
+    margin-top: 52px;
+}
+
+.line-info-block {
+    border-top: 1px solid var(--gray-200);
+    width: 100%;
+}
+
+.columm-container {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 16px;
+}
+
+.columm-container-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columm-container-kurs-duo {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 16px;
+}
+
+.columm-container-kurs {
+    width: 400px;
+
+    color: var(--gray-800);
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.columm-container-summ {
+    color: var(--gray-800);
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.warning-blue {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 24px;
+
+    background-color: var(--blue-100);
+
+    width: 100%;
+    column-gap: 24px;
+
+    color: var(--blue-700);
+    font-weight: 500;
+}
