@@ -704,6 +704,11 @@
     background-color: var(--gray-800);
 }
 
+.arrow-info-page {
+    width: 1em;
+    height: 1em;
+    background-color: var(--gray-800);
+}
 
 
 

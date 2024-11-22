@@ -58,6 +58,14 @@
     row-gap: 12px;
 }
 
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
 .card-category-item-block > .list-item > .list  {
     color: var(--gray-800);
     font-size: 1.25em;
