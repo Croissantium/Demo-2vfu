@@ -320,7 +320,7 @@ input:focus {
     font-size: 1em;
 }
 
-.user-form__elements-buttons-login {
+.user-form__elements-buttons-login, .service-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
