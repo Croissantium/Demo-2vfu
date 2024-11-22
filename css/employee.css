@@ -9,7 +9,7 @@
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 260px;
+    grid-template-rows: 300px;
     gap: 24px;
 }
 
