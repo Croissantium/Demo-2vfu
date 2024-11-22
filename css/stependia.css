@@ -76,7 +76,7 @@
     transition: color 0.2s ease;
 }
 
-.card-category-item-block > .list-item > .list:hover  {
+.card-category-item-block > .list-item > .list-container > .list:hover  {
     color: var(--link-blue);
 }
 
@@ -170,4 +170,43 @@
 
     color: var(--blue-700);
     font-weight: 500;
+}
+
+.modal {
+    display: none; /* Окно скрыто по умолчанию */
+    position: fixed; /* Фиксация окна на экране */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 120px;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    z-index: 999; /* Чтобы модальное окно было выше других элементов */
+}
+
+.modal-content {
+    margin: auto;
+    background-color: #fff; /* Белый фон контента */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    position: relative; /* Чтобы крестик позиционировался внутри */
+}
+
+.close {
+    position: absolute; /* Крестик фиксируется внутри окна */
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Отключение прокрутки */
+.no-scroll {
+    overflow: hidden;
 }

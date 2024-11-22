@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/buttons.css">
     <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/all-icons.css">
 
-    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/stependia.css">
+    <link rel="stylesheet" type="text/css" href="/css/stependia.css">
 </head>
 <body>
     <header>
@@ -113,8 +113,15 @@
                         </div>
                     </div>
                 </div>
-                <a role="button" class="button button--secondary">Информация об государственных стипендиях</a>
+                <button id="openModal" class="button button--secondary">Информация об государственных стипендиях</button>
             </section>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Заголовок</h2>
+                    <p>Это простое модальное окно на jQuery.</p>
+                </div>
+            </div>
             <section class="info-block next-container">
                 <div class="all-blocks-title">
                     <p class="title">Государственные академические стипендии студентам, обучающимся по программам бакалавриата и программам специалитета1</p>
@@ -531,5 +538,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js-files/modal-window.js"></script>
 </body>
 </html>
