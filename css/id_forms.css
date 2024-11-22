@@ -329,6 +329,14 @@ input:focus {
     row-gap: 12px;
 } 
 
+.service-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 12px;
+} 
+
 .user-form__elements-buttons-login > .button--tertiary-id {
     padding: 12px;
 } 
