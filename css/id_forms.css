@@ -38,7 +38,7 @@ body {
 .user-form__elements-input > .container-or {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     
     color: var(--gray-300);
@@ -46,7 +46,7 @@ body {
 
 .user-form__elements-input > .container-or > .line-or {
     border-top: 1px solid var(--gray-300);
-    width: 150px;
+    width: 120px;
 }
 
 .user-form__elements-title {
