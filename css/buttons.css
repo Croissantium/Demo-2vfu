@@ -227,12 +227,12 @@
 
 @media (max-width: 640px) and (min-width: 360px) {
     .button--primary-id {
-        padding: 10px 16px !important;
+        height: 44px !important;
         font-size: 0.9em !important;
     }
 
     .button--secondary-id {
-        padding: 10px 16px !important;
+        height: 44px !important;
         font-size: 0.9em !important;
     }
 
