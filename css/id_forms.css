@@ -45,7 +45,8 @@ body {
 }
 
 .user-form__elements-input > .container-or > .line-or {
-    
+    border-top: 1px solid var(--gray-300);
+    width: 150px;
 }
 
 .user-form__elements-title {
