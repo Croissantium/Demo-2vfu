@@ -119,11 +119,11 @@
     align-items: center;
     justify-content: center;
 
-    width: 52px;
-    height: 52px;
+    width: 64px;    
+    height: 64px;
     padding: 6px 12px;
     background-color: var(--blue-200);
-    border-radius: 100%;
+    border-radius: 8px;
 
 
     font-size: 1.75em;
