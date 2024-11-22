@@ -44,6 +44,10 @@ body {
     color: var(--gray-300);
 }
 
+.user-form__elements-input > .container-or > .line-or {
+    
+}
+
 .user-form__elements-title {
     display: flex;
     flex-direction: column;
