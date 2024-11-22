@@ -234,10 +234,6 @@ input:focus {
     background-color: var(--white);
 }
 
-input:focus + .mail-address p {
-    color: var(--link-blue);
-}
-
 .error-message {
     margin-top: 6px;
 
@@ -357,15 +353,8 @@ input:focus + .mail-address p {
 
     font-size: 1em;
     font-weight: 500;
-}
-
-.mail-address p {
-    width: max-content;
-    transition: color 0.3s ease;
-
     color: var(--gray-800);
 }
-
 
 
 
