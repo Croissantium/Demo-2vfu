@@ -7,6 +7,8 @@
     <link rel="icon" href="https://croissantium.github.io/Demo-2vfu/images and icons/32.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="https://croissantium.github.io/Demo-2vfu/images and icons/180.ico">
 
+    <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
+
     <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/body.css" />
     <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/design-tokens.css" />
     <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/buttons.css" />
@@ -82,6 +84,28 @@
                               }
                             </script>
                         </div>
+                        <script>
+                            window.YaAuthSuggest.init(
+                        {
+                          client_id: "63f7d3d95bdd46b097b5bdfd30fcf379",
+                          response_type: "token",
+                          redirect_uri: "https://croissantium.github.io/Demo-2vfu/id-form-login-answer.html"
+                        },
+                        "https://croissantium.github.io",
+                        {
+                          view: "button",
+                          parentId: "buttonContainerId",
+                          buttonSize: 'm',
+                          buttonView: 'main',
+                          buttonTheme: 'light',
+                          buttonBorderRadius: "12",
+                          buttonIcon: 'ya',
+                        }
+                      )
+                      .then(({handler}) => handler())
+                      .then(data => console.log('Сообщение с токеном', data))
+                      .catch(error => console.log('Обработка ошибки', error))
+                        </script>
                     </div>
                 </div>                  
             </div>
