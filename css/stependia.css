@@ -62,12 +62,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none;
 
     width: 100%;
 }
 
-.card-category-item-block > .list-item > .list  {
+.card-category-item-block > .list-item > .list-container > .list  {
     color: var(--gray-800);
     font-size: 1.25em;
     font-weight: 500;
