@@ -1,3 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Inter-Tight';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://croissantium.github.io/Demo-2vfu/fonts/InterTight-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter-Tight';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://croissantium.github.io/Demo-2vfu/fonts/InterTight-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter-Tight';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://croissantium.github.io/Demo-2vfu/fonts/InterTight-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter-Tight';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://croissantium.github.io/Demo-2vfu/fonts/InterTight-Bold.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Inter-Tight', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    max-width: 1540px;
+    min-width: 1200px;
+    margin: 0px auto;
+    padding: 50px;
+}
+
+.menu-columms {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    width: 100%;
+    column-gap: 28px;
+}
+
+.menu-columms-item {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    row-gap: 24px;
+}
+
+.menu-columms-item h4 {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--gray-400);
+}
+
+.menu-columms-item a {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.menu-columms-item ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.menu-columms-item li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-columms-item a:hover {
+    color: var(--link-blue);
+}
+
+
+
+
+
+
+
 header, .level-1, .level-2 {
     width: 100%;
 }
