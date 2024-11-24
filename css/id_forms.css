@@ -330,7 +330,7 @@ input:focus {
 }
 
 #service-buttons {
-    display: block;
+    display: flex;
     width: auto;
     flex-direction: column;
 
