@@ -320,22 +320,22 @@ input:focus {
     font-size: 1em;
 }
 
-.user-form__elements-buttons-login, .service-buttons {
+.user-form__elements-buttons-login {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     width: 100%;
     row-gap: 12px;
-} 
+}
 
-.service-buttons {
-    display: flex;
+#service-buttons {
+    display: block;
+    width: auto;
     flex-direction: column;
-    align-items: center;
 
     row-gap: 12px;
-} 
+}
 
 .user-form__elements-buttons-login > .button--tertiary-id {
     padding: 12px;
