@@ -193,12 +193,10 @@ header, .level-1, .level-2 {
 @media (max-width: 1140px) and (min-width: 1024px)  {
     .level-2__center-navigation a {
         font-size: 0.9em;
-        margin-right: 14px;
     }
 
     .level-1__left-navigation a, .level-1__right-navigation a {
         font-size: 0.9em;
-        margin-right: 14px;
     }
 
     .logo__name {
