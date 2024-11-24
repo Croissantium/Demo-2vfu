@@ -481,11 +481,16 @@ button {
     overflow: hidden;
 }
 
-@media (max-width: 640px) and (min-width: 320px) {
+@media (max-width: 1024px) and (min-width: 640px) {
     .news__blocks {
         grid-template-columns: 2fr;
         gap: 24px;
     }
+
+    #apative-none {
+        display: none;
+    }
+
 }
 
 @media (max-width: 640px) and (min-width: 320px) {
