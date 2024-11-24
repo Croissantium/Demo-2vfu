@@ -128,11 +128,6 @@
     width: max-content;
 }
 
-.news__blocks {
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-}
-
 @media (max-width: 1024px) and (min-width: 640px) {
     .recktor-block__blocks {
         grid-template-columns: 1fr 1fr;
