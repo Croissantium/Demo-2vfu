@@ -487,10 +487,9 @@ button {
         gap: 24px;
     }
 
-    #apative-none {
+    #adaptive-none {
         display: none;
     }
-
 }
 
 @media (max-width: 640px) and (min-width: 320px) {
