@@ -59,7 +59,7 @@ button {
     padding: 0px 50px;
 }
 
-@media (max-width: 1440px) and (min-width: 320px) {
+@media (max-width: 1024px) and (min-width: 320px) {
     .first-container {
         margin: 24px auto;
         padding: 0px 24px;
@@ -482,7 +482,13 @@ button {
 }
 
 @media (max-width: 640px) and (min-width: 320px) {
+    .news__blocks {
+        grid-template-columns: 2fr;
+        gap: 24px;
+    }
+}
 
+@media (max-width: 640px) and (min-width: 320px) {
     .news__blocks {
         grid-template-columns: 1fr;
         gap: 32px;
@@ -493,6 +499,8 @@ button {
         font-size: 1em;
     }
 }
+
+
 
 
 
