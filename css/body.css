@@ -452,7 +452,6 @@ button {
     background-position: center;
     width: 100%;
     height: auto;
-    padding-top: 56.25%;
     border-radius: 24px;
     transition: transform 0.5s ease;
 }
