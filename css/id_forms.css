@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    row-gap: 24px;
+    row-gap: 12px;
     margin: auto;
     width: 80%;
 }
