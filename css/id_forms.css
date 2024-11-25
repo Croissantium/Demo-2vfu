@@ -362,14 +362,14 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-
+.mail-address p {
+    width: max-content;
     font-size: 1em;
     font-weight: 500;
     color: var(--gray-800);
 }
-
-
 
 
 
