@@ -1,21 +1,3 @@
-.page-footer-title {
-    display: flex;
-    flex-direction: column;
-
-    row-gap: 24px;
-}
-
-.page-footer-title > p {
-    color: var(--gray-800);
-    font-weight: 600;
-    font-size: 2.75em;
-}
-
-.breadcrums > a,
-.breadcrums > p {
-    color: var(--gray-400);
-}
-
 .card-category {
     display: flex;
     flex-direction: column;

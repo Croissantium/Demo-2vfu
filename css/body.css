@@ -296,7 +296,7 @@ button {
 
 
 
-/* -- Заголовок страницы -- */
+/* -- Заголовок (красивой) страницы -- */
 
 .breadcrums {
     display: flex;
@@ -381,11 +381,35 @@ button {
     background-color: var(--blue-400);
 }
 
+
+
+/* -- Заголовок (технической) страницы -- */
+
 .page-title-block {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
+
+.page-footer-title {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 24px;
+}
+
+.page-footer-title > p {
+    color: var(--gray-800);
+    font-weight: 600;
+    font-size: 2.75em;
+}
+
+.breadcrums > a,
+.breadcrums > p {
+    color: var(--gray-400);
+}
+
+
 
 
 
