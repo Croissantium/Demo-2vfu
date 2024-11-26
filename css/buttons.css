@@ -85,6 +85,10 @@
     column-gap: 16px;
 }
 
+.picker-container__title-position {
+    margin-top: 0px;
+}
+
 .navigation-button {
     background-color: #F0F0F1;
     border: none;
