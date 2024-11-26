@@ -404,8 +404,8 @@ button {
     font-size: 2.75em;
 }
 
-.breadcrums > a,
-.breadcrums > p {
+.breadcrums-teh > p,
+.breadcrums-teh > a {
     color: var(--gray-400);
 }
 
