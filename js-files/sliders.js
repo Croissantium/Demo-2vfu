@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('.card-slider__institute-facultet').each(function() {
         var $sliderContainer = $(this).find('.card-slider__institute-facultet-blocks');
 
-        var defaultSlidesToShow = 4; // количество слайдов по умолчанию
+        var defaultSlidesToShow = 4; // Количество слайдов по умолчанию
         var currentSlideCount = $sliderContainer.children().length;
 
         // Добавляем пустые элементы, если карточек меньше defaultSlidesToShow
@@ -22,9 +22,9 @@ $(document).ready(function() {
             infinite: false,
             dots: false,
             cssEase: 'ease',
-            swipe: true,
-            touchMove: true,
-            touchThreshold: 20,
+            swipe: true, // Включаем свайп
+            touchMove: true, // Разрешаем движение touch
+            touchThreshold: 10, // Порог для более точного управления
             responsive: [
                 {
                     breakpoint: 1130,
@@ -55,14 +55,12 @@ $(document).ready(function() {
 
         // Функция для обновления видимости кнопок
         function updateArrows(currentSlide, totalSlides, slidesToShow) {
-            // Скрываем кнопку "влево" на первом слайде
             if (currentSlide === 0) {
                 $prevButton.removeClass('visible').addClass('hidden');
             } else {
                 $prevButton.removeClass('hidden').addClass('visible');
             }
 
-            // Скрываем кнопку "вправо", если последний видимый слайд — последний в списке
             if (currentSlide + slidesToShow >= totalSlides) {
                 $nextButton.removeClass('visible').addClass('hidden');
             } else {
@@ -103,6 +101,10 @@ $(document).ready(function() {
             var slidesToShow = slick.options.slidesToShow;
             var totalSlides = slick.slideCount;
             updateArrows(currentSlide, totalSlides, slidesToShow);
+
+            var currentSlideGroup = Math.floor(currentSlide / slidesToShow);
+            var totalPages = Math.ceil(totalSlides / slidesToShow);
+            updateDots(totalPages, currentSlideGroup);
         });
 
         // Обработчики для кастомных кнопок
@@ -114,12 +116,32 @@ $(document).ready(function() {
             $sliderContainer.slick('slickNext');
         });
 
+        // Поддержка трекпада через горизонтальное событие wheel
+        $sliderContainer.on('wheel', function(event) {
+            var deltaX = event.originalEvent.deltaX;
+            var deltaY = event.originalEvent.deltaY;
+
+            // Ограничиваем прокрутку только по горизонтали
+            if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                event.preventDefault(); // Отключаем вертикальную прокрутку
+
+                if (deltaX < 0) {
+                    $sliderContainer.slick('slickPrev'); // Свайп влево
+                } else {
+                    $sliderContainer.slick('slickNext'); // Свайп вправо
+                }
+            }
+        });
+
         // Обработчик изменения размера окна для обновления состояния кнопок и точек
         $(window).on('resize', function() {
             initDots(); // Пересчитываем состояние кнопок и точек при изменении разрешения
         });
     });
 });
+
+
+
 
 /* Слайдер 3 карточки */
 $(document).ready(function() {
