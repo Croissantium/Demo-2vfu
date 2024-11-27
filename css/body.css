@@ -59,7 +59,7 @@ button {
     padding: 0px 50px;
 }
 
-@media (max-width: 1024px) and (min-width: 320px) {
+@media (max-width: 1024px) and (min-width: 0px) {
     .first-container {
         margin: 24px auto;
         padding: 0px 24px;
@@ -164,7 +164,7 @@ button {
     color: var(--news-category-green-text) !important;
 }
 
-@media (max-width: 1440px) and (min-width: 1024px) {
+@media (max-width: 1440px) and (min-width: 481px) {
     .news-category p {
         font-size: 0.6em;
         padding: 4px 8px;
@@ -224,9 +224,30 @@ button {
     margin-bottom: 80px;
 }
 
-@media (max-width: 768px) and (min-width: 320px) {
+@media (max-width: 1280px) and (min-width: 851px) {
+    .all-blocks-title__title {
+        font-size: 2.5em;
+        width: 100%;
+    }
+
+    .all-blocks-title__subtitle {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .all-blocks-title {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 320px) {
     .all-blocks-title__title {
         font-size: 2em;
+    }
+
+    .all-blocks-title__subtitle {
+        font-size: 0.75em;
+        width: 100%;
     }
 }
 
@@ -263,23 +284,32 @@ button {
     color: var(--gray-200);
 }
 
-
-@media (max-width: 768px) and (min-width: 320px) {
+@media (max-width: 1280px) and (min-width: 1025px) {
     .date {
-        font-size: 0.75em;
-        font-weight: 500;
+        font-size: 0.7em;
     }
 
     .view {
-        font-size: 0.75em;
+        font-size: 0.7em;
     }
 
-    .date--margin {
-        margin-top: 8px;
+    .date-photo {
+        font-size: 0.7em;
     }
     
-    .date--margin-photo {
-        margin-top: 8px;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .date {
+        font-size: 0.6em;
+    }
+
+    .view {
+        font-size: 0.6em;
+    }
+
+    .date-photo {
+        font-size: 0.6em;
     }
 }
 
@@ -382,6 +412,53 @@ button {
 }
 
 
+@media (max-width: 1280px) and (min-width: 769px) {
+    .breadcrums > a {
+        font-size: 0.7em;
+    }
+    
+    .breadcrums > p {
+        font-size: 0.7em;
+    }
+
+    .page-title-elements__title {
+        font-size: 2.5em;
+    }
+    
+    .page-title-elements__subtitle {
+        width: 40%;
+        font-size: 0.75em;
+    }
+
+    .chips {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 0px) {
+    .breadcrums > a {
+        font-size: 0.6em;
+    }
+    
+    .breadcrums > p {
+        font-size: 0.6em;
+    }
+
+    .page-title-elements__title {
+        font-size: 2em;
+    }
+    
+    .page-title-elements__subtitle {
+        width: 40%;
+        font-size: 0.75em;
+    }
+
+    .chips {
+        font-size: 0.6em;
+    }
+}
+
+
 
 /* -- Заголовок (технической) страницы -- */
 
@@ -409,7 +486,17 @@ button {
     color: var(--gray-400);
 }
 
+@media (max-width: 1280px) and (min-width: 769px) {
+    .page-footer-title > p {
+        font-size: 2.5em;
+    }
+}
 
+@media (max-width: 768px) and (min-width: 0px) {
+    .page-footer-title > p {
+        font-size: 2em;
+    }
+}
 
 
 
@@ -480,7 +567,6 @@ button {
 }
 
 @media (max-width: 1024px) and (min-width: 360px) {
-
     .ads {
         width: 100%;
     }
@@ -566,6 +652,26 @@ button {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+@media (max-width: 1280px) and (min-width: 1025px)  {
+    .news__blocks-item__title {
+        font-size: 1em;
+    }
+
+    .news__blocks-item__date-category {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .news__blocks-item__title {
+        font-size: 1em;
+    }
+
+    .news__blocks-item__date-category {
+        margin-top: 24px;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 640px) {
@@ -716,6 +822,44 @@ button {
 }
 
 
+@media (max-width: 1280px) and (min-width: 769px) {
+    .big-columms {
+        grid-template-rows: 320px;
+    }
+    
+    .small-columms {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 320px 320px;
+    }
+
+    .general-page-info__title {
+        font-size: 1.75em;
+    }
+    
+    .general-page-info__subtitle {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 0px) {
+    .big-columms {
+        grid-template-columns: 1fr;
+        grid-template-rows: 320px 320px;
+    }
+    
+    .small-columms {
+        grid-template-columns: 1fr;
+        grid-template-rows: 320px 320px 320px;
+    }
+
+    .general-page-info__title {
+        font-size: 1.75em;
+    }
+    
+    .general-page-info__subtitle {
+        font-size: 0.75em;
+    }
+}
 
 
 

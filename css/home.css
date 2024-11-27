@@ -32,8 +32,8 @@
 }
 
 .card-slider__container-item__icon-circle {
-    width: 56px;
-    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,15 +52,19 @@
     font-weight: 600;
 }
 
-@media (max-width: 640px) and (min-width: 360px) {
+@media (max-width: 768px) and (min-width: 320px) {
+
     .card-slider__container-item__title {
         font-size: 1em;
     }
 
+    .card-slider__container-item {
+        height: 80px;
+    }
+
     .card-slider__container-item__icon-circle {
-        width: 44px;
-        height: 44px;
-        margin-right: 20px;
+        min-width: 44px;
+        min-height: 44px;
     }
 }
 
@@ -126,6 +130,27 @@
     display: flex;
     align-items: center;
     width: max-content;
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+
+    .recktor-block__blocks-item {
+        height: 200px;
+    }
+
+    .recktor-block__blocks-item__title {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .recktor-block__blocks-item {
+        height: 200px;
+    }
+
+    .recktor-block__blocks-item__title {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 640px) {
@@ -201,6 +226,26 @@
     font-weight: 600;
     width: 100%;
     color: var(--black);
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+    .announ-block__blocks-item {
+        height: 200px;
+    }
+
+    .announ-block__blocks-item__title {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .announ-block__blocks-item {
+        height: 200px;
+    }
+
+    .announ-block__blocks-item__title {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 640px) {
@@ -296,6 +341,19 @@
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+
+    .photosMemoty-block__blocks-item__footer-title {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .photosMemoty-block__blocks-item__footer-title {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 640px) {
@@ -410,8 +468,8 @@
 
 .person-block__blocks-item__footer__person-logo {
     border-radius: 50%;
-    width: 56px;
-    height: 56px;
+    max-width: 56px;
+    max-height: 56px;
     border: 4px solid var(--gray-100);
     outline: 2px solid var(--blue-800);
     outline-offset: -2px; 
@@ -421,6 +479,60 @@
     height: 200px;
     color: var(--black);
     transition: scale 0.3s;
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+    .person-block__blocks-item {
+        height: 180px;
+    }
+    
+    .person-block__blocks-item__title {
+        font-size: 1em;
+    }
+
+    .person-block__blocks-item__footer__person-logo {
+        max-width: 52px;
+        max-height: 52px;
+    }
+
+    .person-block__blocks-item__footer-inner {
+        row-gap: 4px;
+    }
+
+    .person-block__blocks-item__footer-inner > .title {
+        font-size: 0.75em;
+    }
+
+    .person-block__blocks-item__footer-inner > .subtitle {
+        font-size: 0.65em;
+    }    
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .person-block__blocks-item {
+        height: 180px;
+    }
+    
+    .person-block__blocks-item__title {
+        font-size: 1em;
+    }
+
+    .person-block__blocks-item__footer__person-logo {
+        max-width: 52px;
+        max-height: 52px;
+    }
+
+    .person-block__blocks-item__footer-inner {
+        row-gap: 4px;
+    }
+
+    .person-block__blocks-item__footer-inner > .title {
+        font-size: 0.75em;
+    }
+
+    .person-block__blocks-item__footer-inner > .subtitle {
+        font-size: 0.65em;
+    }    
 }
 
 @media (max-width: 1024px) and (min-width: 640px) {
@@ -510,9 +622,35 @@
     color: var(--blue-800);
 }
 
-@media (max-width: 1024px) and (min-width: 640px) {
-    .service-block__blocks-item__title {
-        font-size: 1.5em;
+@media (max-width: 1280px) and (min-width: 1025px) {
+    .service-block__blocks-item {
+        height: 300px;
+    }
+
+    .service-block__blocks-item-footer > .title {
+        font-size: 2em;
+    }
+    
+    .service-block__blocks-item-footer > .subtitle {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 641px) {
+    .service-block__blocks {
+        gap: 16px;
+    }
+
+    .service-block__blocks-item {
+        height: 360px;
+    }
+
+    .service-block__blocks-item-footer > .title {
+        font-size: 1.75em;
+    }
+    
+    .service-block__blocks-item-footer > .subtitle {
+        font-size: 1em;
     }
 }
 

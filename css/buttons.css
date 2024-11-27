@@ -175,6 +175,24 @@
     background-color: var(--blue-800);
 }
 
+@media (max-width: 1280px) and (min-width: 481px) {
+
+    .button {
+        padding: 10px 18px;
+        font-size: 0.7em;
+    }
+
+}
+
+@media (max-width: 480px) and (min-width: 0px) {
+
+    .button {
+        padding: 10px 16px;
+        font-size: 0.6em;
+    }
+
+}
+
 @media (max-width: 640px) and (min-width: 360px) {
 
     .picker-point__point {

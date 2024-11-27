@@ -710,9 +710,31 @@
     background-color: var(--gray-800);
 }
 
+@media (max-width: 1280px) and (min-width: 1025px) {
+    .recktor__icon {
+        width: 0.75em;
+        height: 0.75em;
+    }
 
+    .icon-service {
+        width: 2.75em;
+        height: 2.75em;
+    }
+}
 
+@media (max-width: 1024px) and (min-width: 641px) {
+    .icon-service {
+        width: 2.5em;
+        height: 2.5em;
+    }
+}
 
+@media (max-width: 768px) and (min-width: 360px) {
+    .recktor__icon {
+        width: 0.7em;
+        height: 0.7em;
+    }
+}
 
 @media (max-width: 640px) and (min-width: 360px) {
     .icon-arrow__right {
