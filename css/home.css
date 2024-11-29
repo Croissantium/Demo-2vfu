@@ -81,8 +81,8 @@
 .recktor-block__blocks-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-decoration: none;
+    row-gap: 24px;
     width: 100%;
     height: 260px;
     background-color: var(--gray-100);
