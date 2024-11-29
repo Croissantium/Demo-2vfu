@@ -468,8 +468,8 @@
 
 .person-block__blocks-item__footer__person-logo {
     border-radius: 50%;
-    max-width: 56px;
-    max-height: 56px;
+    width: 56px;
+    height: 56px;
     border: 4px solid var(--gray-100);
     outline: 2px solid var(--blue-800);
     outline-offset: -2px; 
@@ -491,8 +491,8 @@
     }
 
     .person-block__blocks-item__footer__person-logo {
-        max-width: 52px;
-        max-height: 52px;
+        width: 52px;
+        height: 52px;
     }
 
     .person-block__blocks-item__footer-inner {
@@ -518,8 +518,8 @@
     }
 
     .person-block__blocks-item__footer__person-logo {
-        max-width: 52px;
-        max-height: 52px;
+        width: 52px;
+        height: 52px;
     }
 
     .person-block__blocks-item__footer-inner {
