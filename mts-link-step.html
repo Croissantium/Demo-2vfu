@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МТС Линк - вместо Zoom, как провести занятие?</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          // Загрузка header из файла header.html
+          $("#header-placeholder").load("header.html");
+          $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/css/body.css" />
+    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/design-tokens.css" />
+    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/footer.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/all-icons.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/employee.css" />
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <section class="page-footer first-container">
+            <div class="page-footer-title">
+                <div class="breadcrums breadcrums-teh">
+                    <a href="https://croissantium.github.io/Demo-2vfu/home.html" tabindex="0">Главная</a>
+                    <p>/</p>
+                    <a href="https://croissantium.github.io/Demo-2vfu/employee.html" tabindex="0">Сотруднику</a>
+                    <p>/</p>
+                    <a href="https://croissantium.github.io/Demo-2vfu/mts-link-step.html" tabindex="0">МТС Линк - вместо Zoom</a>
+                </div>
+                <p class="title">МТС Линк - вместо Zoom</p>
+                <p class="subtitle">Как провести занятие?</p>
+            </div>
+        </section>
+        <section class="mts-link-step next-container">
+            <div class="mts-link-step-item">
+                <div class="number-block">01</div>
+                <div class="column-title">
+                    <p class="title">Авторизуйтесь через SSO с корпоративным ящиком @s-vfu.ru.</p>
+                    <a role="button" href="#" tabindex="0" class="button button--primary">
+                        <p>Авторизоваться</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mts-link-step-item">
+                <div class="number-block">02</div>
+                <p class="title">Перейдите на страницу МТС Линк</p>
+            </div>
+            <div class="mts-link-step-item">
+                <div class="number-block">03</div>
+                <p class="title">Нажмите на значок «плюс», чтобы создать мероприятие.</p>
+            </div>
+            <div class="mts-link-step-item  mts-link-step-item-column">
+                <div class="container-title">
+                    <div class="number-block">04</div>
+                    <p class="title">Выберите доступное мероприятие</p>
+                </div>
+                <div class="select-container">
+                    <div class="select-two">
+                        <div class="header">
+                            <p class="title">Вебинар</p>
+                            <p class="subtitle">для лекций с несколькими ведущими и ограниченным доступом для участников.</p>
+                        </div>
+                        <p class="footer">До 300 участников</p>
+                    </div>
+                    <div class="select-one">
+                        <div class="header">
+                            <p class="title">Встреча</p>
+                            <p class="subtitle">для обсуждений в режиме конференции.</p>
+                        </div>
+                        <p class="footer">До 30 участников </br> (До 100 после настройки)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mts-link-step-item  mts-link-step-item-blue">
+                <p class="title">Готовы начать?</p>
+                <a role="button" href="/mts-link-step.html" tabindex="0" class="button button--primary">
+                        <p>Перейти к МТС Линк</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+</body>
+</html> 
