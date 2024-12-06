@@ -145,6 +145,7 @@
 .student-life-blocks .slick-slide {
     opacity: 0.3;
     transition: opacity 0.3s ease;
+    cursor: pointer;
 }
 
 .dormitory-blocks .slick-current,
