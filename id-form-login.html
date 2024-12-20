@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="https://croissantium.github.io/Demo-2vfu/images and icons/180.ico">
 
     <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/body.css" />
-    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/design-tokens.css" />
+    <link rel="stylesheet" type="text/css" href="/css/design-tokens.css" />
     <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/buttons.css" />
     <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/all-icons.css" />
 
@@ -33,14 +33,10 @@
                     <div class="input-field-all-container">
                         <div class="input-field-all-container-title">
                             <div class="input-field">
-                                <label class="input-info">Логин</label>
-                                <div class="container-all-input-mail-address">
-                                    <div class="all-input-mail-address">
-                                        <input type="text" id="email" name="email" placeholder="Введите логин" required />
-                                        <div class="mail-address">
-                                            <p>@empl.s-vfu.ru</p>
-                                        </div>
-                                    </div>
+                                <label for="email" class="input-label">Логин</label>
+                                <div class="input-field input-field-flex">
+                                  <input type="text" id="email" name="email" placeholder="Введите логин" required />
+                                  <span class="input-domain">@empl.s-vfu.ru</span>
                                 </div>
                                 <span class="error-message" id="emailError">&nbsp;</span>
                             </div>

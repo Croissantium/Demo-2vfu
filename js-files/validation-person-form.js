@@ -1,81 +1,75 @@
-  // Маска для ввода даты рождения
-  const dobInput = document.getElementById('dob');
-  dobInput.addEventListener('input', function () {
-    let value = dobInput.value.replace(/\D/g, ''); // Удаляем все, кроме цифр
+// Функция для применения маски ввода
+function applyMask(input, maskPattern) {
+  input.addEventListener('input', function () {
+    let value = input.value.replace(/\D/g, ''); // Удаляем все, кроме цифр
+    let maskedValue = '';
 
-    if (value.length > 2) value = value.slice(0, 2) + '.' + value.slice(2);
-    if (value.length > 5) value = value.slice(0, 5) + '.' + value.slice(5, 9);
-
-    dobInput.value = value; // Обновляем значение
-  });
-
-  // Маска для ввода паспортных данных
-  const passportInput = document.getElementById('passport');
-  passportInput.addEventListener('input', function () {
-    let value = passportInput.value.replace(/\D/g, ''); // Удаляем все, кроме цифр
-
-    if (value.length > 2) value = value.slice(0, 2) + ' ' + value.slice(2);
-    if (value.length > 5) value = value.slice(0, 5) + ' ' + value.slice(5, 11);
-
-    passportInput.value = value; // Обновляем значение
-  });
-
-  // Функция проверки данных
-  function checkData() {
-    const fioInput = document.getElementById('fio');
-    const dobInput = document.getElementById('dob');
-    const passportInput = document.getElementById('passport');
-
-    const fio = fioInput.value.trim();
-    const dob = dobInput.value.trim();
-    const passport = passportInput.value.trim();
-
-    // Сброс сообщений об ошибке и класса ошибки
-    document.getElementById('fioError').innerText = '';
-    document.getElementById('dobError').innerText = '';
-    document.getElementById('passportError').innerText = '';
-    
-    fioInput.classList.remove('input-error');
-    dobInput.classList.remove('input-error');
-    passportInput.classList.remove('input-error');
-
-    let isValid = true;
-
-    // Валидация ФИО
-    if (!fio) {
-      document.getElementById('fioError').innerText = 'Обязательно для заполнения.';
-      fioInput.classList.add('input-error');
-      isValid = false;
-    }
-
-    // Валидация даты рождения
-    if (!dob) {
-      document.getElementById('dobError').innerText = 'Обязательно для заполнения.';
-      dobInput.classList.add('input-error');
-      isValid = false;
-    } else {
-      const datePattern = /^\d{2}\.\d{2}\.\d{4}$/;
-      if (!datePattern.test(dob)) {
-        document.getElementById('dobError').innerText = 'Неправильный формат даты (пример: 31.12.2000).';
-        dobInput.classList.add('input-error');
-        isValid = false;
+    let valueIndex = 0;
+    for (let i = 0; i < maskPattern.length; i++) {
+      if (maskPattern[i] === 'X') {
+        if (value[valueIndex]) {
+          maskedValue += value[valueIndex++];
+        } else {
+          break;
+        }
+      } else {
+        maskedValue += maskPattern[i];
       }
     }
 
-    // Валидация паспортных данных
-    if (!passport) {
-      document.getElementById('passportError').innerText = 'Обязательно для заполнения.';
-      passportInput.classList.add('input-error');
-      isValid = false;
-    } else {
-      const passportPattern = /^\d{2}\s\d{2}\s\d{6}$/;
-      if (!passportPattern.test(passport)) {
-        document.getElementById('passportError').innerText = 'Неправильный формат паспортных данных (пример: 12 34 567890).';
-        passportInput.classList.add('input-error');
-        isValid = false;
-      }
-    }
-  }
+    input.value = maskedValue;
+  });
+}
 
-  // Добавление обработчика событий для кнопки
-  document.getElementById('checkDataButton').addEventListener('click', checkData);
+// Применение масок
+applyMask(document.getElementById('dob'), 'XX.XX.XXXX'); // Для даты рождения
+applyMask(document.getElementById('passport'), 'XX XX XXXXXX'); // Для паспортных данных
+
+// Функция проверки данных
+function checkData() {
+  const fields = [
+    {
+      id: 'fio',
+      errorId: 'fioError',
+      validator: value => value.trim() !== '',
+      errorMessage: 'Обязательно для заполнения.',
+    },
+    {
+      id: 'dob',
+      errorId: 'dobError',
+      validator: value => /^\d{2}\.\d{2}\.\d{4}$/.test(value),
+      errorMessage: 'Неправильный формат даты (пример: 31.12.2000).',
+    },
+    {
+      id: 'passport',
+      errorId: 'passportError',
+      validator: value => /^\d{2}\s\d{2}\s\d{6}$/.test(value),
+      errorMessage: 'Неправильный формат паспортных данных (пример: 12 34 567890).',
+    },
+  ];
+
+  let isValid = true;
+
+  fields.forEach(({ id, errorId, validator, errorMessage }) => {
+    const input = document.getElementById(id);
+    const errorElement = document.getElementById(errorId);
+
+    const value = input.value.trim();
+    const valid = validator(value);
+
+    // Сброс сообщений об ошибке и классов
+    errorElement.innerText = '';
+    input.classList.remove('input-error');
+
+    if (!valid) {
+      errorElement.innerText = errorMessage;
+      input.classList.add('input-error');
+      isValid = false;
+    }
+  });
+
+  return isValid;
+}
+
+// Добавление обработчика событий для кнопки
+document.getElementById('checkDataButton').addEventListener('click', checkData);
