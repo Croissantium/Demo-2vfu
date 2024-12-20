@@ -242,8 +242,9 @@ body {
     width: 40%;
     height: 40px;
     padding: 12px;
-
     border-radius: 0px 10px 10px 0px;
+
+    font-weight: 500;
 }
 
 .container-all-input-mail-address {
