@@ -498,7 +498,7 @@ input:focus {
     transition: text-decoration 0.2s ease;
 }
 
-.inner-info:hover {
+.inner-info link:hover {
     text-decoration: underline;
 }
 
