@@ -82,31 +82,10 @@ body {
     text-align: start;
 }
 
-.link-text {
-    text-decoration: none;
-    color: var(--link-blue);
-}
-
-.link-text:hover {
-    text-decoration: underline;
-}
 
 
 
 
-
-.user-form__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 74px;
-}
-
-.bottom-container {
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
-}
 
 .input-field-all-container {
     display: flex;
@@ -489,16 +468,27 @@ input:focus {
 
 
 
+.user-form__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 74px;
+}
 
+.user-form__bottom-container {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
 
-
-.inner-info {
+.user-form__bottom-container__text,
+.user-form__bottom-container__text-link {
     text-decoration: none;
     color: var(--blue-800);
     transition: text-decoration 0.2s ease;
 }
 
-.inner-info link:hover {
+.user-form__bottom-container__text-link:hover {
     text-decoration: underline;
 }
 
@@ -506,6 +496,15 @@ input:focus {
     width: 1px;
     height: 12px;
     background-color: var(--blue-600);
+}
+
+.user-form__bottom-container__text-blue-link {
+    text-decoration: none;
+    color: var(--link-blue);
+}
+
+.user-form__bottom-container__text-blue-link:hover {
+    text-decoration: underline;
 }
 
 .custom-select {
