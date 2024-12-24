@@ -105,6 +105,7 @@ body {
 .bottom-container {
     display: flex;
     align-items: center;
+    column-gap: 8px;
 }
 
 .input-field-all-container {
@@ -238,7 +239,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--blue-200);
+    background-color: var(--blue-150);
     width: 40%;
     height: 40px;
     padding: 12px;
@@ -460,7 +461,7 @@ input:focus {
 }
 
 .user-form__elements-answer-item:hover {
-    background-color: var(--gray-200);
+    background-color: var(--gray-100);
 }
 
 .user-form__elements-answer-item > .title {
@@ -494,13 +495,17 @@ input:focus {
 .inner-info {
     text-decoration: none;
     color: var(--blue-800);
+    transition: text-decoration 0.2s ease;
+}
+
+.inner-info:hover {
+    text-decoration: underline;
 }
 
 .line-h {
     width: 1px;
     height: 12px;
-    background-color: var(--blue-800);
-    margin: 0px 8px;
+    background-color: var(--blue-600);
 }
 
 .custom-select {
