@@ -104,16 +104,6 @@
     column-gap: 12px;
 }
 
-.recktor-block__blocks-item__header-view {
-    display: flex;
-    align-items: center;
-
-    column-gap: 4px;
-    background-color: var(--blue-150);
-    border-radius: 100px;
-    padding: 6px 10px;
-}
-
 .recktor-block__blocks-item__title {
     font-size: 1.25em;
     font-weight: 600;

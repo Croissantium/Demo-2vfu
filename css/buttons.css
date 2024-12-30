@@ -45,7 +45,7 @@
 }
 
 .button--tertiary:hover {
-    background-color: var(--blue-tertiary-hover);
+    background-color: var(--blue-secondary-hover);
 }
 
 .button--quaternary {
