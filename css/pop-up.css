@@ -12,9 +12,10 @@
 }
 
 .popup-content {
+    display: flex;
+    flex-direction: column;
     max-width: 60%;
-
-    margin: 52px;
+    margin: 50px auto;
     padding: 52px;
     background: #fff;
     border-radius: 24px;
