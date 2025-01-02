@@ -7,19 +7,11 @@
     <link rel="icon" href="https://croissantium.github.io/Demo-2vfu/images and icons/32.ico" type="image/x-icon">
     <link rel="icon" sizes="192x192" href="https://croissantium.github.io/Demo-2vfu/images and icons/favicon 192px.ico">
     <link rel="apple-touch-icon" href="https://croissantium.github.io/Demo-2vfu/images and icons/180.ico">
-
-    <script>
-        $(document).ready(function () {
-          $("#header-news-placeholder").load("header-news.html");
-          $("#footer-news-placeholder").load("footer-news.html");
-        });
-    </script>
-
     <link rel="stylesheet" type="text/css" href="/css/body.css">
     <link rel="stylesheet" type="text/css" href="/css/design-tokens.css">
     <link rel="stylesheet" type="text/css" href="/css/header-news.css">
     <link rel="stylesheet" type="text/css" href="/css/footer-news.css">
-    
+
     <link rel="stylesheet" type="text/css" href="/css/buttons.css">
     <link rel="stylesheet" type="text/css" href="/css/all-icons.css">
 
@@ -39,7 +31,7 @@
             </div>
         </section>
         <section class="news-box first-container">
-            <a href="#" class="news-box-last-big">
+            <a class="news-box-last-big">
                 <img class="image-big" src="https://www.s-vfu.ru/upload/iblock/ac2/ac2ea311f488a360eca6d27226b7d47c.jpg">
                 <div class="container-info container-info-big">
                     <div class="title">
@@ -253,5 +245,12 @@
             </div>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("#header-news-placeholder").load("header-news.html");
+          $("#footer-news-placeholder").load("footer-news.html");
+        });
+    </script>
 </body>
 </html>
