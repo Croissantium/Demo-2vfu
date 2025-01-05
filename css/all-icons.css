@@ -601,7 +601,7 @@
 .circle-x-pop-up {
     width: inherit;
     height: inherit;
-    background-color: #000000;
+    background-color: var(--blue-800);
 }
 
 .icon-phone--applicant-info {

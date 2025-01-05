@@ -18,7 +18,7 @@
     margin: 50px auto;
     padding: 52px;
     background: #fff;
-    border-radius: 24px;
+    border-radius: 52px;
 }
 
 .body-fixed {
@@ -63,6 +63,10 @@
 .container > .body {
     font-size: 1.25em;
     font-weight: 400;
+}
+
+.body > li {
+    list-style-position: inside;
 }
 
 .container > ul {

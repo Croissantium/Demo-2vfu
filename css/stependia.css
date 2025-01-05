@@ -48,6 +48,12 @@
     width: 100%;
 }
 
+.list-container:hover .list,
+.list-container:hover .arrow-info-page {
+    color: var(--link-blue);
+    background-color: var(--link-blue);
+}
+
 .card-category-item-block > .list-item > .list-container > .list  {
     color: var(--gray-800);
     font-size: 1.25em;
@@ -56,10 +62,6 @@
     text-decoration: none;
 
     transition: color 0.2s ease;
-}
-
-.card-category-item-block > .list-item > .list-container > .list:hover  {
-    color: var(--link-blue);
 }
 
 .info-block-container {
