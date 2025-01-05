@@ -440,7 +440,7 @@ input:focus {
 }
 
 .user-form__elements-answer-item:hover {
-    background-color: var(--gray-100);
+    background-color: var(--gray-200);
 }
 
 .user-form__elements-answer-item > .title {
