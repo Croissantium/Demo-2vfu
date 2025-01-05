@@ -32,8 +32,8 @@
 }
 
 .card-slider__container-item__icon-circle {
-    min-width: 56px;
-    min-height: 56px;
+    width: 56px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +45,11 @@
 .card-slider__container-item__icon-circle img {
     width: 32px;
 }
+
+.card-slider__container-item__icon-circle svg {
+    width: 32px;
+}
+
 
 .card-slider__container-item__title {
     color: var(--gray-800);
