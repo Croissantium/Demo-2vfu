@@ -44,10 +44,12 @@
 
 .card-slider__container-item__icon-circle img {
     width: 32px;
+    height: 32px;
 }
 
 .card-slider__container-item__icon-circle svg {
     width: 32px;
+    height: 32px;
 }
 
 
