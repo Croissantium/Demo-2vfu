@@ -15,6 +15,7 @@
           $("#footer-placeholder").load("footer.html");
         });
     </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
@@ -425,5 +426,14 @@
 
     <script src="https://croissantium.github.io/Demo-2vfu/js-files/scroll-to-div.js"></script>
     <script src="https://croissantium.github.io/Demo-2vfu/js-files/sliders.js"></script>
+    <script>
+        ScrollReveal().reveal('.card-slider__applicant-blocks-item', {
+            duration: 800,
+            distance: '50px',
+            easing: 'ease-out',
+            delay: 100,
+            interval: 80
+        });
+    </script>
 </body>
 </html>
