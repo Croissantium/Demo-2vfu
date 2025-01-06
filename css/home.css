@@ -1,3 +1,7 @@
+#header-placeholder {
+    position: sticky;
+}
+
 .card-slider__container {
     display: flex !important;;
     justify-content: space-between;
