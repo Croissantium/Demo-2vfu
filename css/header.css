@@ -1,9 +1,18 @@
-header, .level-1, .level-2 {
+header {
     width: 100%;
 }
 
+#header-scroll {
+    width: 100%;
+    top: 0px;
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
 .level-1 {
-    background-color: var(--gray-100);
+    background: rgba(248, 249, 250, 0.85);
+    backdrop-filter: blur(40px);
     padding: 10px 0px;
 }
 
