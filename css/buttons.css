@@ -233,8 +233,8 @@
     justify-content: center;
     border: none;
     width: 100%;
-    border-radius: 12px;
-    padding: 12px 24px;
+    border-radius: 8px;
+    padding: 16px 24px;
     background-color: var(--blue-800);
     color: var(--white);
     cursor: pointer;
@@ -274,10 +274,10 @@
     justify-content: center;
     background-color: var(--blue-100);
     color: var(--dark_blue);  
-    border-radius: 12px;
+    border-radius: 8px;
     border: none;
     width: 100%;
-    padding: 12px 24px;
+    padding: 16px 24px;
     cursor: pointer;    
     text-decoration: none;
     transition: background-color 0.2s;
