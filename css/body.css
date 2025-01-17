@@ -129,7 +129,7 @@ button {
     display: flex;
 }
 
-.news-category p {
+.news-category a {
     color: var(--white);
     text-align: center;
     font-size: 0.875em;
