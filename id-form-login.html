@@ -30,39 +30,43 @@
                     <div class="warning-card-container">
                     </div>
                 </div>
-                <div class="user-form__elements-input">
-                    <div class="input-field-all-container">
-                        <div class="input-field-all-container-title">
-                            <div class="input-field">
-                                <input type="text" id="email" name="email" required />
-                                <label class="animate-label">Введите логин</label>
-                                <div class="line-h-input"></div>
-                                <p class="input-domain">@empl.s-vfu.ru</p>
-                                <span class="error-message" id="emailError">&nbsp;</span>
-                            </div>
-                            <div class="input-field">
-                                <input type="password" id="password" name="password" spellcheck="false" required minlength="8">
-                                <label class="animate-label">Введите пароль</label>
-                                <button type="button" id="togglePassword" class="input-password-visible">
-                                    <img id="toggleIcon" class="icon-eye" alt="Показать пароль">
-                                </button>
-                                <span class="error-message" id="passwordError">&nbsp;</span>
+                <div class="user-form__elements-input-buttons">
+                    <div class="user-form__elements-input">
+                        <div class="input-field-all-container">
+                            <div class="input-field-all-container-title">
+                                <div class="input-field">
+                                    <input type="text" id="email" name="email" required />
+                                    <label class="animate-label">Введите логин</label>
+                                    <div class="line-h-input"></div>
+                                    <p class="input-domain">@empl.s-vfu.ru</p>
+                                    <span class="error-message" id="emailError">&nbsp;</span>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" id="password" name="password" spellcheck="false" required minlength="8">
+                                    <label class="animate-label">Введите пароль</label>
+                                    <button type="button" id="togglePassword" class="input-password-visible">
+                                        <img id="toggleIcon" class="icon-eye" alt="Показать пароль">
+                                    </button>
+                                    <span class="error-message" id="passwordError">&nbsp;</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <form class="checkbox">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" id="checkbox" />
-                            <span class="checkmark"></span>
-                            Запомнить меня
-                        </label>
-                    </form>
+                        <div class="checkbox-forgot-password">
+                            <form class="checkbox">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <span class="checkmark"></span>
+                                    Запомнить меня
+                                </label>
+                            </form>
+                            <a href="https://croissantium.github.io/Demo-2vfu/password-loss.html" class="button--tertiary-id">Забыли пароль?</a>
+                        </div>
+                    </div> 
                     <div class="user-form__elements-buttons-login">
                         <a href="#" class="button--primary-id" onclick="validateForm()">Вход</a>
                         <a href="https://croissantium.github.io/Demo-2vfu/id-form-answer.html" class="button--secondary-id">Регистрация</a>
-                        <a href="https://croissantium.github.io/Demo-2vfu/password-loss.html" class="button--tertiary-id">Забыли пароль?</a>
-                    </div>
-                </div>                  
+                    </div>      
+                </div>           
             </div>
         </div>
         <div class="user-form__bottom">
