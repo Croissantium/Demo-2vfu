@@ -8,12 +8,12 @@
     <link rel="icon" sizes="192x192" href="https://croissantium.github.io/Demo-2vfu/images and icons/favicon 192px.ico">
     <link rel="apple-touch-icon" href="https://croissantium.github.io/Demo-2vfu/images and icons/180.ico">
 
-    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/body.css" />
-    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/design-tokens.css" />
-    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/buttons.css" />
-    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/all-icons.css" />
+    <link rel="stylesheet" type="text/css" href="/css/body.css" />
+    <link rel="stylesheet" type="text/css" href="/css/design-tokens.css" />
+    <link rel="stylesheet" type="text/css" href="/css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="/css/all-icons.css" />
 
-    <link rel="stylesheet" type="text/css" href="https://croissantium.github.io/Demo-2vfu/css/id_forms.css" />
+    <link rel="stylesheet" type="text/css" href="/css/id_forms.css" />
 </head>
 <body>
     <div class="user-form-container">
@@ -42,27 +42,29 @@
                         <a href="https://croissantium.github.io/Demo-2vfu/id-form-answer.html" class="chips">Назад</a>
                     </div>
                 </div>
-                <div class="user-form__elements-input">
-                    <div class="input-field-all-container-title">
-                        <div class="input-field">
-                            <label class="input-info">ФИО</label>
-                            <input type="text" id="fio" name="name" placeholder="Введите ФИО" required spellcheck="false">
-                            <span class="error-message" id="fioError">&nbsp;</span>
-                        </div>
-                        <div class="input-field">
-                            <label class="input-info">Дата рождения</label>
-                            <input type="tel" id="dob" name="date" class="input-date" placeholder="00.00.0000" spellcheck="false" required>
-                            <span class="error-message" id="dobError">&nbsp;</span>
-                        </div>
-                        <div class="input-field">
-                            <label class="input-info">Паспортные данные</label>
-                            <input type="tel" id="passport" name="passport" class="passport-input" placeholder="00 00 000000" spellcheck="false">
-                            <span class="error-message" id="passportError">&nbsp;</span>
+                <div class="user-form__elements-input-buttons">
+                    <div class="user-form__elements-input">
+                        <div class="input-field-all-container-title">
+                            <div class="input-field input-field-padding-left-12px">
+                                <input type="text" id="fio" name="name" spellcheck="false" required>
+                                <label class="animate-label">Введите ФИО</label>
+                                <span class="error-message" id="fioError">&nbsp;</span>
+                            </div>
+                            <div class="input-field input-field-padding-left-12px">
+                                <input type="tel" id="dob" name="date" class="input-date" spellcheck="false" required>
+                                <label class="animate-label">Введите дату рождения</label>
+                                <span class="error-message" id="dobError">&nbsp;</span>
+                            </div>
+                            <div class="input-field input-field-padding-left-12px">
+                                <input type="tel" id="passport" name="passport" class="passport-input" spellcheck="false" required>
+                                <label class="animate-label">Введите паспортные данные</label>
+                                <span class="error-message" id="passportError">&nbsp;</span>
+                            </div>
                         </div>
                     </div>
                     <div class="user-form__elements-buttons">
-                        <button type="button" id="checkDataButton" class="button--primary-id">Проверить данные</button>
-                        <p>Уже есть аккаунт? <a class="link-text" href="https://croissantium.github.io/Demo-2vfu/id-form-login.html">Войдите</a></p>
+                        <button id="checkDataButton" class="button--primary-id">Проверить данные</button>
+                        <a href="https://croissantium.github.io/Demo-2vfu/id-form-login.html" class="button--secondary-id">Войти</a>
                     </div>
                 </div>
             </div>
